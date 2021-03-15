@@ -26,4 +26,52 @@ for i in range(len(datals)):
         t.right(datals[i][2])
     else:
         t.left(datals[i][2])
-        
+'''        
+#==============================================================================
+
+#Problem Code Tips：
+#UnicodeDecodeError: 
+#‘gbk' codec can't decode byte 0x8c in position 5: illegal multibyte sequence
+
+#SyntaxError: 
+#invalid character in identifier
+
+#FileNotFoundError: 
+#No such file or directory: 'data.txt'
+
+#============================================================================== 
+
+#Cause of the problem (from most important to least important)
+
+#Careless of 0.
+
+#Mistaking English commas into Chinese, neglecting the process of typesetting,
+
+#Error troubleshooting is done only by looking at the type displayed by the input method
+
+#1. The console working directory is not set at the same level, ignoring the power of environment variables
+
+#2. The relative path cannot find the file. This is not resolved
+
+#Solution:
+
+#0. View punctuation type by substitution
+
+#1. Set the console working directory as the file saving path
+
+#2. Be aware of error reports. There are many questions and answers online for this type of information
+
+#==============================================================================
+
+#造成问题的原因（重要程度由高至低）
+#0.粗心
+#	把英文的逗号错打成中文，在排错过程中不重视，
+#	仅通过看输入法显示的类型排错
+#1.控制台工作目录设置不在本级目录，轻视环境变量的力量
+#2.相对路径找不到文件暂时未解决
+
+#解决方法：
+#0.通过替换查看标点类型
+#1.控制台工作目录设置为文件保存路径
+#2.多理解报错提示，网上有很多这种类型的问答，可供借鉴
+'''
